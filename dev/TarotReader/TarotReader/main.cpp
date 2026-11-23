@@ -1,7 +1,9 @@
 #include <iostream>
-
+#include "ConsoleColor.h"
 int main()
 {
-    std::cout << "Hello World!\n";
+	ConsoleColor::Print("The cards are waiting...\n", ConsoleColor::Ink::Cyan);
+
+	std::cin.get();
 }
 

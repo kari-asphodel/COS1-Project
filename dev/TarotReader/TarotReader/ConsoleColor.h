@@ -18,11 +18,11 @@ namespace ConsoleColor
 	{
 #ifdef _WIN32
 		HANDLE output = GetStdHandle(STD_OUTPUT_HANDLE);
-		CONSOLE_SCREEN_BUFFER_INFO original();
+		CONSOLE_SCREEN_BUFFER_INFO original{};
 
 		if (output != INVALID_HANDLE_VALUE && GetConsoleScreenBufferInfo(output, &original))
 		{
-			WORD color = FOREGROUND_RED | FORGROUND_BLUE | FOREGROUND_INTENSITY; // PURPLE
+			WORD color = FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_INTENSITY; // PURPLE
 			if (ink == Ink::Cyan)
 			{
 				color = FOREGROUND_GREEN | FOREGROUND_BLUE | FOREGROUND_INTENSITY;
@@ -51,7 +51,7 @@ namespace ConsoleColor
 			return;
 		}
 #endif
-		std::cout << message;
+		std::cout<<message;
 	}
 };
 
