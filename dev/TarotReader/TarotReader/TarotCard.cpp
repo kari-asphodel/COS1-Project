@@ -1,7 +1,6 @@
 #include "TarotCard.h"
 #include "ConsoleColor.h"
 
-ConsoleColor::Print("----------------------------------------\n", ConsoleColor::Ink::Purple);
 #include <iostream>
 
 TarotCard::TarotCard(int number, const std::string& name, const std::string& keywords, const std::string& uprightMeaning, const std::string& reversedMeaning, const std::string& asciiArt)
