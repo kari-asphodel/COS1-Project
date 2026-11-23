@@ -74,7 +74,7 @@ void TarotDeck::CreateDeck()
 ));
 }
 
-void TarotDeck::DisplayDeck() const
+void TarotDeck::DisplayDeck() 
 {
     std::cout << "\n=== MAJOR ARCANA ===\n\n";
     for (const TarotCard& card : cards)
