@@ -1,14 +1,7 @@
-#include <iostream>
-#include <cstdlib>
-#include "TarotDeck.h"
+#include "App.h"
 int main()
 {
-	std::srand(static_cast<unsigned int>(std::time(nullptr)));
-	TarotDeck deck;
-	deck.DisplayDeck();
-	std::cout << "\nThe cards are shuffling...\n";
-	std::cout << "Your card is:\n";
-	deck.DrawCard();
-	std::cin.get();
+	App app;
+	app.Run();
 }
 
