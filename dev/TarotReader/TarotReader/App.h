@@ -8,6 +8,7 @@ public:
 private:
 	TarotDeck deck;
 
+	void DisplayWelcome() const;
 	void DisplayMenu() const;
 	void DrawCard();
 	void BrowseCards();
